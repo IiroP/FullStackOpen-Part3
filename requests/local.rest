@@ -1,0 +1,26 @@
+# Get all persons
+GET http://localhost:3001/api/persons
+
+###
+
+# Get specific person
+GET http://localhost:3001/api/persons/66b72765c0cd74458ee9a67a
+
+###
+
+# Get non-existing person
+GET http://localhost:3001/api/persons/notexists
+
+###
+
+# Delete person 4
+DELETE http://localhost:3001/api/persons/4
+
+### Create new person
+POST http://localhost:3001/api/persons/ HTTP/1.1
+content-type: application/json
+
+{
+	"name": "Test Person",
+	"number": "1234567890"
+}

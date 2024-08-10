@@ -1,0 +1,26 @@
+# Get all persons
+GET https://empty-grass-3146.fly.dev/api/persons
+
+###
+
+# Get 1st person
+GET https://empty-grass-3146.fly.dev/api/persons/1
+
+###
+
+# Get non-existing person
+GET https://empty-grass-3146.fly.dev/api/persons/notexists
+
+###
+
+# Delete person 4
+DELETE https://empty-grass-3146.fly.dev/api/persons/4
+
+### Create new person
+POST https://empty-grass-3146.fly.dev/api/persons/ HTTP/1.1
+content-type: application/json
+
+{
+	"name": "Test Person",
+	"number": "1234567890"
+}
